@@ -1,0 +1,28 @@
+---
+# tables are grouped by model id, not by model name
+# IN GREY (comments): model names, in red: model_ids, in green: table_names
+# structure: one table name = export_name / action_function_name
+# the ORDER of these tables SHOULD NEVER MOVE - if you add a table, add it below!
+
+# test_seasonal_planning
+C09A833B29FC4CB084B89318E9B06066:
+  - '#Ctry_Cat_Dep_Brand_export / move_export_to_archive'
+  - '#Ctry_Cat_Dep_Brand_export / create_excel_validation_source_file'
+  - Seasonal Input Brand / re_import_ps1_ps2_season
+  - Seasonal SP Dep / re_import_ps1_ps2_season
+  - Weekly SP Brand / re_import_ps1_ps2_weekly
+  #- Versions_export / change_switchover_week
+
+# Seasonal planning
+4B884C14CBD4456984DA153D7679CF15:
+  - '#Ctry_Cat_Dep_Brand_export / move_export_to_archive'
+  - '#Ctry_Cat_Dep_Brand_export / create_excel_validation_source_file'
+  - Seasonal Input Brand / re_import_ps1_ps2_season
+  - Seasonal SP Dep / re_import_ps1_ps2_season
+  - Weekly SP Brand / re_import_ps1_ps2_weekly
+  #- Versions_export / change_switch_over_week
+
+
+#BP Ctry_Cat_Dep Planning
+51DDB1921CDD44EE8E3CC3EBFB8C8989:
+  - 3. Ctry_Cat_Dep / re_import_bp_to_seasonal_planning

@@ -1,0 +1,25 @@
+---
+redcat:
+    host: redcat.zalora.com
+    user: 
+    pwd: 
+    db: redcat
+    port: 5439
+
+buying_data_mart:
+    host: pitbull.cvwspld2f8hb.ap-southeast-1.redshift.amazonaws.com
+    user: 
+    pwd: 
+    db: dwh
+    port: 5439
+
+anaplan:
+    workspace_id: 8a81948849b9c4e20149d4138
+    login: thomas.beaudouin@zalora.com:lkm
+    model_ids:
+        # Seasonal Planning 2.0_old
+        #- 5B3632060DD54B0AA70F3D801D1B3012
+        # Seasonal Planning 2.0
+        - 70F4E07C63E245498350F5DA2195DC17
+        #BP Ctry_Cat_Dep Planning
+        #s- 51DDB1921CDD44EE8E3CC3EBFB8C8989

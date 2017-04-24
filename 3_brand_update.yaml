@@ -1,0 +1,37 @@
+---
+# tables are grouped by model id, not by model name
+# IN GREY (comments): model names, in red: model_ids, in green: table_names
+# structure: one table name = csv_query_name / module_name / process name
+# the ORDER of the tables is important for update_brand
+# (you don t want to update Ctry_cat_dep_brand list before Brand list : trust me ;)
+
+# test_seasonal_planning
+BC3473A7A53E4B3D80AF3E98CF7E0AC1:
+  #- partly_delete_brand / partly_delete_brand_module / partly_delete_brand_process # deletes brands from certain department / categories in '#Ctry_Cat_Dep_Brand'
+  #- delete_brand / delete_brand_module / delete_brand_process # deletes brands from the primary list Brand and from everywhere
+  #- add_brand_1 / Brand # adds new brands to the primary list Brand
+  #- add_brand_2 / '#Ctry_Cat_Dep_Brand' # adds the same brands to the secondary list #Ctry_Cat_Dep_Brand
+  #- add_subcat / Subcat
+  #- subcat_level_list / '#Ctry_Cat_Dep_Brand_Subcat' # populates the subcat of these new brands
+  #- change_brand_1 / Brand # changes the codes of the brands
+  #- change_brand_2 / Brand # changes the names of the brands
+  #- change_brand_3 / '#Ctry_Cat_Dep_Brand' # changes the code in '#Ctry_Cat_Dep_Brand' FYI: name is automatically changed as numbered list
+  #- change_brand_4 / '#Ctry_Cat_Dep_Brand' # changes all other references
+  - NA / NA / update_wh_from_ctry_list # updates the warehouse lists (brand and subcat levels) from the country lists (brand and subcat levels)
+
+# Seasonal planning
+4B884C14CBD4456984DA153D7679CF15:
+  #- partly_delete_brand / partly_delete_brand_module / partly_delete_brand_process # deletes brands from certain department / categories in '#Ctry_Cat_Dep_Brand'
+  #- delete_brand / delete_brand_module / delete_brand_process # deletes brands from the primary list Brand and from everywhere
+  #- add_brand_1 / Brand # adds new brands to the primary list Brand
+  #- add_brand_2 / '#Ctry_Cat_Dep_Brand' # adds the same brands to the secondary list #Ctry_Cat_Dep_Brand
+  #- add_subcat / Subcat
+  #- subcat_level_list / '#Ctry_Cat_Dep_Brand_Subcat' # populates the subcat of these new brands
+  #- change_brand_1 / Brand # changes the codes of the brands
+  #- change_brand_2 / Brand # changes the names of the brands
+  #- change_brand_3 / '#Ctry_Cat_Dep_Brand' # changes the code in '#Ctry_Cat_Dep_Brand' FYI: name is automatically changed as numbered list
+  #- change_brand_4 / '#Ctry_Cat_Dep_Brand' # changes all other references
+  - NA / NA / update_wh_from_ctry_list # updates the warehouse lists (brand and subcat levels) from the country lists (brand and subcat levels)
+
+#BP Ctry_Cat_Dep Planning
+51DDB1921CDD44EE8E3CC3EBFB8C8989:

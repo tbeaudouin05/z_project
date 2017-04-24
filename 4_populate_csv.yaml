@@ -1,0 +1,21 @@
+---
+# tables are grouped by model id, not by model name
+# IN GREY (comments): model names, in red: model_ids, in green: table_names
+# structure: one table name = csv_name / csv_copy_1_name / csv_copy_2_name / etc.
+
+# dev_space
+BC3473A7A53E4B3D80AF3E98CF7E0AC1:
+  - 'add_brand / add_brand_1 / add_brand_2' # copies add_brand.csv to add_brand_1 and add_brand_2 in the csv folder
+  - 'change_brand / change_brand_1 / change_brand_2 / change_brand_3 / change_brand_4' # same story as above but for change_brand
+  - 'delete_brand / delete_brand'
+  - 'partly_delete_brand / partly_delete_brand'
+
+# Seasonal planning
+4B884C14CBD4456984DA153D7679CF15:
+  - 'add_brand / add_brand_1 / add_brand_2' # copies add_brand.csv to add_brand_1 and add_brand_2 in the csv folder
+  - 'change_brand / change_brand_1 / change_brand_2 / change_brand_3 / change_brand_4' # same story as above but for change_brand
+  - 'delete_brand / delete_brand'
+  - 'partly_delete_brand / partly_delete_brand'
+
+#BP Ctry_Cat_Dep Planning
+51DDB1921CDD44EE8E3CC3EBFB8C8989:

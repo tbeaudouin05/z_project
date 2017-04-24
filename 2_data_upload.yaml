@@ -1,0 +1,56 @@
+---
+# tables are grouped by model id, not by model name
+# IN GREY (comments): model names, in red: model_ids, in green: table_names
+# structure: one table name = csv_query_name / module_name / source_id
+
+# Seasonal Planning 2.0_old
+5B3632060DD54B0AA70F3D801D1B3012:
+    - sales / sales_ctry_dep / 1
+    - sales / sales_ctry_brand / 1
+    - sales / sales_ctry_subcat / 1
+    - zops / zops_wh_dep / 4
+    - zops / zops_wh_brand / 4
+    - zops / zops_wh_subcat / 4
+    - stock / stock_wh_dep / 3
+    - stock / stock_wh_brand / 3
+    - stock / stock_wh_subcat / 3
+    - osoh / osoh_wh_dep / 2
+    - osoh / osoh_wh_brand / 2    
+
+# Seasonal Planning 2.0
+70F4E07C63E245498350F5DA2195DC17:
+    - data_30\data / data / 0 
+    - data_210_240\data / data / 7
+    - data_240_270\data / data / 8
+    - data_270_300\data / data / 9
+    - data_300_330\data / data / 10
+    - data_330_360\data / data / 11
+    - data_360_390\data / data / 12
+    - data_390_420\data / data / 13
+    - data_420_450\data / data / 14
+    - data_450_480\data / data / 15
+    - data_30_60\data / data / 1 
+    - data_60_90\data / data / 2
+    - data_90_120\data / data / 3
+    - data_120_150\data / data / 4
+    - data_150_180\data / data / 5
+    - data_180_210\data / data / 6
+
+
+# Seasonal planning
+4B884C14CBD4456984DA153D7679CF15:
+    - WSSI_Sales -ctry_cat_dep / WSSI_Sales -ctry_cat_dep / 5
+    #- WSSI_Sales / WSSI_Sales / 6
+    #- WSSI_sales_subcat / WSSI_sales_subcat / 7
+    #- MSSI_Osoh - Ctry_cat_dep / MSSI_Osoh - Ctry_cat_dep / 8
+    #- MSSI_Osoh / MSSI_Osoh / 9
+    #- WSSI_Stock - ctry_cat_dep / WSSI_Stock - ctry_cat_dep / 10
+    #- WSSI_Stock / WSSI_Stock / 11
+    #- WSSI_ZOPS - wh_cat_dep / WSSI_ZOPS - wh_cat_dep / 12
+    #- WSSI_ZOPS / WSSI_ZOPS / 13
+
+
+#BP Ctry_Cat_Dep Planning
+51DDB1921CDD44EE8E3CC3EBFB8C8989:
+    - HLTOI data Mthly / HLTOI data Mthly / 14
+    - HLTOI data Weekly / HLTOI data Weekly / 15
